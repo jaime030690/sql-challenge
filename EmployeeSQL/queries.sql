@@ -34,6 +34,9 @@ join departments as dep
 on de.dept_no = dep.dept_no;
 
 -- (5)	List all employees whose first name is "Hercules" and last names begin with "B."
+select last_name, first_name
+from employees
+where first_name = 'Hercules' and last_name like 'B%';
 
 -- (6)	List all employees in the Sales department, including their employee number, 
 --		last name, first name, and department name.
